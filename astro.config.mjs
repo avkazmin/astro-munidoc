@@ -8,7 +8,7 @@ export default defineConfig({
     base: '/astro-munidoc/',           // Имя вашего репозитория с слешами
     integrations: [
         starlight({
-            title: 'Jules Docs',
+            title: 'Munidoc',
             social: [],
             sidebar: [
                 {
