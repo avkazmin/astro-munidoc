@@ -3,6 +3,9 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
+      // Замените 'YourUsername' и 'YourRepositoryName' на ваши значения
+    site: 'https://avkazmin.github.io', // Основной домен GitHub Pages
+    base: '/astro-munidoc/',           // Имя вашего репозитория с слешами
     integrations: [
         starlight({
             title: 'Jules Docs',
