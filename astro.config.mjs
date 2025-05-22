@@ -11,26 +11,35 @@ export default defineConfig({
       social: [],
       sidebar: [
         {
-          label: "Docs",
+          label: "Обзоры",
           items: [
-            { label: "Getting Started", link: "/" },
-            { label: "Environment setup", link: "/environment/" },
-            { label: "Running tasks", link: "/running-tasks/" },
-            { label: "Planning", link: "/review-plan/" },
-            { label: "Reviewing code", link: "/code/" },
-            { label: "Managing tasks and repos", link: "/tasks-repos/" },
-            { label: "Using the repo view", link: "/repo/" },
-            { label: "Errors and failures", link: "/errors/" },
-            { label: "Usage and limits", link: "/usage-limits/" },
-            { label: "Feedback and support", link: "/feedback/" },
+            { label: "Законодательство", link: "/legislation/" },
+            { label: "Правовая экспертиза", link: "/legal-expertise/" },
+            { label: "Протесты прокуратуры", link: "/protests-procuracy/" },
           ],
         },
         {
-          label: "More Resources",
+          label: "Проекты МНПА",
           items: [
-            { label: "FAQ", link: "/faq/" },
-            { label: "Changelog", link: "/changelog/" },
-            { label: "Contact", link: "/contact/" },
+            { label: "Муниципальные услги", link: "/municipal-services/" },
+            { label: "Муниципальный контроль", link: "/municipal-control/" },
+            { label: "Бюджетный процесс", link: "/budget-process/" },
+          ],
+        },
+        {
+          label: "Руководства",
+          items: [
+            { label: "Агент регистра", link: "/agent-registry/" },
+            { label: "Портал НПА РФ", link: "/npa-portal/" },
+            { label: "Аналитика", link: "/analytics/" },
+          ],
+        },
+        {
+          label: "Методические рекомендации",
+          items: [
+            { label: "Совещания", link: "/meetings/" },
+            { label: "Реестр полномочий ОМСУ", link: "/omsu-powers/" },
+            { label: "История изменений", link: "/changelog/" },
           ],
         },
       ],

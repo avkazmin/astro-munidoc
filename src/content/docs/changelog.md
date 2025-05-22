@@ -1,8 +1,6 @@
 ---
-title: Changelog
-description: List of changes and updates to Jules.
+title: История изменений
+description: Здесь указана история изменений Munidoc.
 ---
 
-# Changelog
-
-Это страница 'Changelog'. Заполните ее содержимым.
+Это страница 'История изменений'. Заполните ее содержимым.
