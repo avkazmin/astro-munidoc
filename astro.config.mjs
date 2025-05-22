@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
+import logoSrc from "./src/assets/logo.svg"; // Импортируем логотип
 
 export default defineConfig({
   // Замените 'YourUsername' и 'YourRepositoryName' на ваши значения
@@ -8,6 +9,11 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Munidoc",
+      logo: {
+        src: logoSrc, // Используем импортированный логотип
+        alt: "Логотип Munidoc",
+        replacesTitle: true,
+      },
       social: [],
       sidebar: [
         {
