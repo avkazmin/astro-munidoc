@@ -25,9 +25,9 @@ export default defineConfig({
           ],
         },
         {
-          label: "Проекты МНПА",
+          label: "Проекты",
           items: [
-            { label: "Муниципальные услги", link: "/municipal-services/" },
+            { label: "Муниципальные услуги", link: "/municipal-services/" },
             { label: "Муниципальный контроль", link: "/municipal-control/" },
             { label: "Бюджетный процесс", link: "/budget-process/" },
           ],
