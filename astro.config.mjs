@@ -15,8 +15,8 @@ export default defineConfig({
         replacesTitle: true,
       },
       social: [
-        { label: 'GitHub', link: 'https://github.com/avkazmin/astro-munidoc' },
-        { label: 'Telegram', link: 'https://t.me/normowriter' }
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/avkazmin/astro-munidoc' },
+        { icon: 'telegram', label: 'Telegram', href: 'https://t.me/normowriter' }
       ],
       sidebar: [
         {
