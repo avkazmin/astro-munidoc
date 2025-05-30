@@ -14,7 +14,10 @@ export default defineConfig({
         alt: "Логотип Munidoc",
         replacesTitle: true,
       },
-      social: [],
+      social: [
+        { label: 'GitHub', link: 'https://github.com/avkazmin/astro-munidoc' },
+        { label: 'Telegram', link: 'https://t.me/normowriter' }
+      ],
       sidebar: [
         {
           label: "Обзоры",
