@@ -41,6 +41,7 @@ export default defineConfig({
           label: "Руководства",
           items: [
             { label: "Агент регистра", link: "/agent-registry/" },
+            { label: "Ссылки", link: "/links/" },
             { label: "Портал НПА РФ", link: "/npa-portal/" },
             { label: "Аналитика", link: "/analytics/" },
           ],
