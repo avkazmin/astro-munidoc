@@ -27,39 +27,39 @@ export default defineConfig({
             { label: "Протесты прокуратуры", link: "/protests-procuracy/" },
           ],
         },
-        {
-          label: "Проекты",
-          items: [
-            { label: "Муниципальные услуги", link: "/municipal-services/" },
-            { label: "Муниципальный контроль", link: "/municipal-control/" },
-            { label: "Бюджетный процесс", link: "/budget-process/" },
-          ],
-        },
+        // {
+        //   label: "Проекты",
+        //   items: [
+        //     { label: "Муниципальные услуги", link: "/municipal-services/" },
+        //     { label: "Муниципальный контроль", link: "/municipal-control/" },
+        //     { label: "Бюджетный процесс", link: "/budget-process/" },
+        //   ],
+        // },
         {
           label: "Руководства",
           items: [
             { label: "Агент регистра", link: "/agent-registry/" },
             { label: "Ссылки", link: "/links/" },
-            { label: "Портал НПА РФ", link: "/npa-portal/" },
-            { label: "Аналитика", link: "/analytics/" },
+            // { label: "Портал НПА РФ", link: "/npa-portal/" },
+            // { label: "Аналитика", link: "/analytics/" },
           ],
         },
         {
           label: "Методические рекомендации",
           items: [
             { label: "Совещания", link: "/meetings/" },
-            { label: "Реестр полномочий ОМСУ", link: "/omsu-powers/" },
-            { label: "История изменений", link: "/changelog/" },
+            // { label: "Реестр полномочий ОМСУ", link: "/omsu-powers/" },
+            // { label: "История изменений", link: "/changelog/" },
           ],
         },
-        {
-          label: "Нейросети для юриста",
-          items: [
-            { label: "Данные", link: "/datasciense/" },
-            { label: "Python", link: "/python/" },
-            { label: "Коллекция промптов", link: "/prompts/" },
-          ],
-        },
+        // {
+        //   label: "Нейросети для юриста",
+        //   items: [
+        //     { label: "Данные", link: "/datasciense/" },
+        //     { label: "Python", link: "/python/" },
+        //     { label: "Коллекция промптов", link: "/prompts/" },
+        //   ],
+        // },
       ],
     }),
   ],
