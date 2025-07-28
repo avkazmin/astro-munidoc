@@ -48,6 +48,7 @@ export default defineConfig({
           label: "Методические рекомендации",
           items: [
             { label: "Совещания", link: "/meetings/" },
+            { label: "Конференции", link: "/conferention/" },
             // { label: "Реестр полномочий ОМСУ", link: "/omsu-powers/" },
             // { label: "История изменений", link: "/changelog/" },
           ],
