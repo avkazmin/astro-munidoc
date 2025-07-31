@@ -49,6 +49,7 @@ export default defineConfig({
           items: [
             { label: "Совещания", link: "/meetings/" },
             { label: "Конференции", link: "/conferention/" },
+            { label: "Правовая экспертиза", link: "/mrexpertise/" },
             // { label: "Реестр полномочий ОМСУ", link: "/omsu-powers/" },
             // { label: "История изменений", link: "/changelog/" },
           ],
