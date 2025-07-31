@@ -50,6 +50,7 @@ export default defineConfig({
             { label: "Совещания", link: "/meetings/" },
             { label: "Конференции", link: "/conferention/" },
             { label: "Правовая экспертиза", link: "/mrexpertise/" },
+            { label: "Создание МНПА", link: "/mrcreatemnpa/" },
             // { label: "Реестр полномочий ОМСУ", link: "/omsu-powers/" },
             // { label: "История изменений", link: "/changelog/" },
           ],
