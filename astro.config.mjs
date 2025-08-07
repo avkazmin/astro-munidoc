@@ -4,7 +4,7 @@ import logoSrc from "./src/assets/logo.svg"; // Импортируем лого�
 
 export default defineConfig({
   // Замените 'YourUsername' и 'YourRepositoryName' на ваши значения
-  site: "https://avkazmin.github.io", // Основной домен GitHub Pages
+  site: "https://munidoc.ru", // Основной домен GitHub Pages
   base: "/", // Имя вашего репозитория с слешами
   integrations: [
     starlight({
