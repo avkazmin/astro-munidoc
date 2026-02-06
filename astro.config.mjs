@@ -33,11 +33,8 @@ export default defineConfig({
             { label: "Конференции", link: "/conferention/" },
             // { label: "Реестр полномочий ОМСУ", link: "/omsu-powers/" },
             // { label: "История изменений", link: "/changelog/" },
-          ],
-        },
-        {
-          label: "Нейросети для юриста",
-          items: [
+        ]},
+        {label: "Нейросети для юриста", items: [
             // { label: "Данные", link: "/datasciense/" },
             // { label: "Python", link: "/python/" },
             { label: "Коллекция промптов для юристов: Руководство по ChatGPT", link: "/prompts/" },
