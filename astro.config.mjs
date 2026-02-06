@@ -27,7 +27,7 @@ export default defineConfig({
             { label: "Об авторе", link: "/author/" },
             { label: "Дисклеймер", link: "/disclaimer/" }, 
         ]},
-        { label: "Обзоры", items: [
+        { label: "Практика", items: [
             { label: "Законодательство", link: "/legislation/" },
             { label: "Правовая экспертиза", link: "/legal-expertise/" },
             { label: "Протесты прокуратуры", link: "/protests-procuracy/" },
@@ -36,7 +36,7 @@ export default defineConfig({
             { label: "Агент регистра", link: "/agent-registry/" },
             { label: "Ссылки", link: "/links/" },
         ]},
-        { label: "Методические рекомендации", items: [
+        { label: "Мероприятия и обучение", items: [
             { label: "Совещания", link: "/meetings/" },
             { label: "Конференции", link: "/conferention/" },
             // { label: "Реестр полномочий ОМСУ", link: "/omsu-powers/" },
