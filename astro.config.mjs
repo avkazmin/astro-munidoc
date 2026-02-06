@@ -40,7 +40,7 @@ export default defineConfig({
           items: [
             // { label: "Данные", link: "/datasciense/" },
             // { label: "Python", link: "/python/" },
-            { label: "Коллекция промптов", link: "/prompts/" },
+            { label: "Коллекция промптов для юристов: Руководство по ChatGPT", link: "/prompts/" },
           ],
         },
       ],
