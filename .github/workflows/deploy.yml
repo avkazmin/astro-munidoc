@@ -1,21 +1,16 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Запускать при пуше в ветку `main`
   push:
     branches:
       - main
-  # Позволяет запускать этот воркфлоу вручную со страницы Actions на GitHub
   workflow_dispatch:
 
-# Разрешения GITHUB_TOKEN для разрешения развертывания на GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Разрешить только одно одновременное развертывание, отменяя предыдущие запуски
-# Это предотвратит гонку развертываний, если вы быстро пушите несколько коммитов
 concurrency:
   group: pages
   cancel-in-progress: true
@@ -24,21 +19,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v4 # Используйте актуальную версию
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Setup Node.js
-        uses: actions/setup-node@v4 # Используйте актуальную версию
+        uses: actions/setup-node@v4
         with:
-          node-version: '18' # Укажите версию Node.js, совместимую с вашим проектом
-          cache: npm # Или 'yarn'/'pnpm'
+          node-version: '18'
+          cache: npm
+
       - name: Install dependencies
-        run: npm ci # Или 'yarn install --frozen-lockfile'/'pnpm install --frozen-lockfile'
-      - name: Build your site
+        run: npm ci
+
+      - name: Build project
         run: npm run build
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3 # Используйте актуальную версию
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist # Путь к вашей папке сборки (обычно 'dist')
+          path: ./dist
 
   deploy:
     needs: build
@@ -47,6 +46,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Checkout GitHub Pages
+        uses: actions/checkout@v4
+
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 # Используйте актуальную версию
+        uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
