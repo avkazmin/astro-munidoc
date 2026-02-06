@@ -26,8 +26,7 @@ export default defineConfig({
             { label: "Цели и задачи", link: "/about/" },
             { label: "Об авторе", link: "/author/" },
             { label: "Дисклеймер", link: "/disclaimer/" }, 
-          ],
-        },
+        ]},
         { label: "Обзоры", items: [
             { label: "Законодательство", link: "/legislation/" },
             { label: "Правовая экспертиза", link: "/legal-expertise/" },
