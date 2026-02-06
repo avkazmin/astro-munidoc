@@ -53,14 +53,14 @@ export default defineConfig({
             // { label: "История изменений", link: "/changelog/" },
           ],
         },
-        // {
-        //   label: "Нейросети для юриста",
-        //   items: [
-        //     { label: "Данные", link: "/datasciense/" },
-        //     { label: "Python", link: "/python/" },
-        //     { label: "Коллекция промптов", link: "/prompts/" },
-        //   ],
-        // },
+        {
+          label: "Нейросети для юриста",
+          items: [
+            // { label: "Данные", link: "/datasciense/" },
+            // { label: "Python", link: "/python/" },
+            { label: "Коллекция промптов", link: "/prompts/" },
+          ],
+        },
       ],
     }),
   ],
