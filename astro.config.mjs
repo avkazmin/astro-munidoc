@@ -34,6 +34,7 @@ export default defineConfig({
         ]},
         { label: "Инструменты", items: [
             { label: "Дашборд", link: "/datalens/" },
+            { label: "Power Query", link: "/powerquery/" },
             { label: "Агент регистра", link: "/agent-registry/" },
             { label: "Ссылки", link: "/links/" },
         ]},
