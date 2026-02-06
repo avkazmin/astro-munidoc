@@ -19,6 +19,15 @@ export default defineConfig({
         { icon: 'telegram', label: 'Telegram', href: 'https://t.me/normowriter' }
       ],
       sidebar: [
+         {
+          label: "О проекте",
+          collapsed: true, // Можно свернуть, чтобы не занимало место
+          items: [
+            { label: "Цели и задачи", link: "/about/" },
+            { label: "Об авторе", link: "/author/" },
+            { label: "Дисклеймер", link: "/disclaimer/" }, 
+          ],
+        },
         { label: "Обзоры", items: [
             { label: "Законодательство", link: "/legislation/" },
             { label: "Правовая экспертиза", link: "/legal-expertise/" },
