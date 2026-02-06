@@ -32,7 +32,8 @@ export default defineConfig({
             { label: "Правовая экспертиза", link: "/legal-expertise/" },
             { label: "Протесты прокуратуры", link: "/protests-procuracy/" },
         ]},
-        { label: "Руководства", items: [
+        { label: "Инструменты", items: [
+            { label: "Дашборд", link: "/datalens/" },
             { label: "Агент регистра", link: "/agent-registry/" },
             { label: "Ссылки", link: "/links/" },
         ]},
