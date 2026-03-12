@@ -33,6 +33,7 @@ export default defineConfig({
             { label: "Протесты прокуратуры", link: "/protests-procuracy/" },
         ]},
         { label: "Инструменты", items: [
+            { label: "Jupyter Notebook", link: "/jupyter/" },  
             { label: "Дашборд", link: "/datalens/" },
             { label: "Power Query", link: "/powerquery/" },
             { label: "Агент регистра", link: "/agent-registry/" },
