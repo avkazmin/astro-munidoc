@@ -5,7 +5,7 @@ import logoSrc from "./src/assets/logo.svg";
 export default defineConfig({
   site: "https://munidoc.ru",
   base: "/",
-  output: "static", // 👈 вот это добавь
+  output: "static", // 👈 Добавлено по вашему запросу
   integrations: [
     starlight({
       title: "Munidoc",
@@ -14,6 +14,14 @@ export default defineConfig({
         alt: "Логотип Munidoc",
         replacesTitle: true,
       },
+      // 🔌 Настройка встроенного Expressive Code
+      expressiveCode: {
+        // Указываем тему Dracula. Рекомендуется передать вторым аргументом светлую тему,
+        // чтобы при переключении сайта в светлый режим код оставался читаемым.
+        themes: ['dracula', 'github-light'], 
+        // Если вы хотите, чтобы Dracula использовалась и для светлой, и для темной темы:
+        // themes: ['dracula'],
+      },
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/avkazmin/astro-munidoc' },
         { icon: 'telegram', label: 'Telegram', href: 'https://t.me/normowriter' }
@@ -21,7 +29,6 @@ export default defineConfig({
       sidebar: [
          {
           label: "О проекте",
-          // collapsed: true, // Можно свернуть, чтобы не занимало место
           items: [
             { label: "Цели и задачи", link: "/about/" },
             { label: "Об авторе", link: "/author/" },
@@ -42,12 +49,8 @@ export default defineConfig({
         { label: "Мероприятия и обучение", items: [
             { label: "Совещания", link: "/meetings/" },
             { label: "Конференции", link: "/conferention/" },
-            // { label: "Реестр полномочий ОМСУ", link: "/omsu-powers/" },
-            // { label: "История изменений", link: "/changelog/" },
         ]},
-        {label: "Нейросети для юриста", items: [
-            // { label: "Данные", link: "/datasciense/" },
-            // { label: "Python", link: "/python/" },
+        { label: "Нейросети для юриста", items: [
             { label: "Коллекция промптов для юристов: Руководство по ChatGPT", link: "/prompts/" },
           ],
         },
